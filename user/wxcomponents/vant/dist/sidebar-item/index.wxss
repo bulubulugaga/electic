@@ -1,0 +1,40 @@
+@import '../common/index.wxss';
+.van-sidebar-item{
+	display:block;
+	box-sizing:border-box;
+	overflow:hidden;
+	word-wrap:break-word;
+	border-left:12rpx solid transparent;
+	-webkit-user-select:none;
+	user-select:none;
+	padding-left:32rpx;
+	font-size:28rpx;
+	line-height:106rpx;
+	color:#999;
+	background-color:#fff;
+}
+.van-sidebar-item__text{
+	position:relative;
+	display:inline-block
+}
+.van-sidebar-item--hover:not(.van-sidebar-item--disabled){
+	background-color:#f2f3f5;
+}
+.van-sidebar-item:after{
+	border-bottom-width:1px
+}
+.van-sidebar-item--selected{
+	color:#31D8B6;
+	border-color:#31D8B6;
+	border-color:var(--sidebar-selected-border-color,#31D8B6)
+}
+.van-sidebar-item--selected:after{
+	border-right-width:1px
+}
+.van-sidebar-item--selected,.van-sidebar-item--selected.van-sidebar-item--hover{
+	background-color:#F2F2F2;
+}
+.van-sidebar-item--disabled{
+	color:#c8c9cc;
+	color:var(--sidebar-disabled-text-color,#c8c9cc)
+}

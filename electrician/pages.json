@@ -1,0 +1,155 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/first",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},{
+			"path": "pages/index/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},{
+			"path": "pages/user/serve",
+			"style": {
+				"navigationBarTitleText": "客服",
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"navigationBarTextStyle": "black",
+				"mp-weixin": {
+				  "usingComponents": {
+					"chat": "plugin://chatbot/chat"
+				  }
+				}
+				
+			}
+		},{
+			"path": "pages/index/newsDetail",
+			"style": {
+				"navigationBarTitleText": "新闻详情"
+			}
+		},{
+			"path": "pages/user/income",
+			"style": {
+				"navigationBarTitleText": "今日收入"
+			}
+		},{
+			"path": "pages/user/ranking",
+			"style": {
+				"navigationBarTitleText": "排行榜"
+			}
+		},{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},{
+			"path": "pages/index/allNews",
+			"style": {
+				"navigationBarTitleText": "所有消息"
+			}
+		},{
+			"path": "pages/bill/bill",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},{
+			"path": "pages/user/upCard",
+			"style": {
+				"navigationBarTitleText": "修改证件"
+			}
+		},{
+			"path": "pages/user/intro",
+			"style": {
+				"navigationBarTitleText": "个人介绍"
+			}
+		},{
+			"path": "pages/user/toBill",
+			"style": {
+				"navigationBarTitleText": "今日接单"
+			}
+		},{
+			"path": "pages/index/order",
+			"style": {
+				"navigationBarTitleText": "接单"
+			}
+		},{
+			"path": "pages/user/mark",
+			"style": {
+				"navigationBarTitleText": "评价详情"
+			}
+		},{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},{
+			"path": "pages/bill/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},{
+			"path": "pages/user/wallet",
+			"style": {
+				"navigationBarTitleText": "钱包"
+			}
+		},{
+			"path": "pages/user/walletDetail",
+			"style": {
+				"navigationBarTitleText": "提现详情"
+			}
+		},{
+			"path": "pages/user/walletDetail1",
+			"style": {
+				"navigationBarTitleText": "提现详情"
+			}
+		},{
+			"path": "pages/user/incomeAll",
+			"style": {
+				"navigationBarTitleText": "全部收入"
+			}
+		},{
+			"path": "pages/bill/map",
+			"style": {
+				"navigationBarTitleText": "地图"
+			}
+		},{
+			"path": "pages/user/infor",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+	    "color": "#DCDCDC",
+	    "selectedColor": "#4DA8E5",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+		"iconWidth": "10rpx",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/images/tab01.png",
+	        "selectedIconPath": "static/images/tab01_1.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/bill/bill",
+	        "iconPath": "static/images/tab02.png",
+	        "selectedIconPath": "static/images/tab02_1.png",
+	        "text": "我的订单"
+	    }, {
+	        "pagePath": "pages/user/user",
+	        "iconPath": "static/images/tab03.png",
+	        "selectedIconPath": "static/images/tab03_1.png",
+	        "text": "我的"
+	    }]
+	}
+}

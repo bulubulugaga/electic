@@ -1,0 +1,4 @@
+@import '../common/index.wxss';
+.van-sidebar{
+	width:190rpx;
+}

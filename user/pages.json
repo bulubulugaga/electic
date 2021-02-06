@@ -1,0 +1,194 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/guide",
+			"style": {
+				"navigationBarTitleText": "引导页"
+			}
+		},{
+			"path": "pages/index/category",
+			"style": {
+				"navigationBarTitleText": "订单类型",
+				"usingComponents": {
+				  "van-sidebar": "/wxcomponents/vant/dist/sidebar/index",
+				  "van-sidebar-item": "/wxcomponents/vant/dist/sidebar-item/index",
+				  "van-divider": "/wxcomponents/vant/dist/divider/index"
+				}
+			}
+		},{
+			"path": "pages/index/order",
+			"style": {
+				"navigationBarTitleText": "下单"				
+			}
+		},{
+			"path": "pages/user/serve",
+			"style": {
+				"navigationBarTitleText": "客服",
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"navigationBarTextStyle": "black",
+				"mp-weixin": {
+				  "usingComponents": {
+					"chat": "plugin://chatbot/chat"
+				  }
+				}
+				
+			}
+		},{
+			"path": "pages/user/coupon",
+			"style": {
+				"navigationBarTitleText": "优惠券"
+			}
+		},{
+			"path": "pages/user/wallet",
+			"style": {
+				"navigationBarTitleText": "钱包"
+			}
+		},{
+			"path": "pages/user/news",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "电工联盟"
+			}
+		},{
+			"path": "pages/index/emlist",
+			"style": {
+				"navigationBarTitleText": "电工列表"
+			}
+		},{
+			"path": "pages/user/aderEdit",
+			"style": {
+				"navigationBarTitleText": "编辑地址"
+			}
+		},{
+			"path": "pages/user/idea",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},{
+			"path": "pages/bill/bill",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+		        // "enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/bill/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},{
+			"path": "pages/bill/remark",
+			"style": {
+				"navigationBarTitleText": "订单评价"
+			}
+		},{
+			"path": "pages/index/allNews",
+			"style": {
+				"navigationBarTitleText": "所有消息"
+			}
+		},{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},{
+			"path": "pages/index/emdetail",
+			"style": {
+				"navigationBarTitleText": "电工列表详情"
+			}
+		},{
+			"path": "pages/user/adress",
+			"style": {
+				"navigationBarTitleText": "地址"
+			}
+		},{
+			"path": "pages/user/map",
+			"style": {
+				"navigationBarTitleText": "用户地图"
+			}
+		},{
+			"path": "pages/index/newsDetail",
+			"style": {
+				"navigationBarTitleText": "新闻详情"
+			}
+		},{
+			"path": "pages/user/vip",
+			"style": {
+				"navigationBarTitleText": "会员中心"
+			}
+		},{
+			"path": "pages/user/grade",
+			"style": {
+				"navigationBarTitleText": "积分"
+			}
+		},{
+			"path": "pages/user/aboutUs",
+			"style": {
+				"navigationBarTitleText": "关于电工联盟"
+			}
+		},{
+			"path": "pages/user/recharge",
+			"style": {
+				"navigationBarTitleText": "充值"
+			}
+		},{
+			"path": "pages/user/reDetail",
+			"style": {
+				"navigationBarTitleText": "充值明细"
+			}
+		},{
+			"path": "pages/user/upName",
+			"style": {
+				"navigationBarTitleText": "修改用户名"
+			}
+		},{
+			"path": "pages/user/help",
+			"style": {
+				"navigationBarTitleText": "帮助与反馈"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#23D5B0",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom",
+		"usingComponents": {
+		  "van-uploader": "/wxcomponents/vant/dist/uploader/index",
+		  "van-popup": "/wxcomponents/vant/dist/popup/index"
+		}
+	},
+	"tabBar": {
+	    "color": "#DCDCDC",
+	    "selectedColor": "#31D8B6",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+		"iconWidth": "10rpx",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/images/tab01.png",
+	        "selectedIconPath": "static/images/tab01_1.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/bill/bill",
+	        "iconPath": "static/images/tab02.png",
+	        "selectedIconPath": "static/images/tab02_1.png",
+	        "text": "订单"
+	    }, {
+	        "pagePath": "pages/user/user",
+	        "iconPath": "static/images/tab03.png",
+	        "selectedIconPath": "static/images/tab03_1.png",
+	        "text": "我的"
+	    }]
+	},
+	"permission": {
+	    "scope.userLocation": {
+	      "desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+	    }
+	  }
+}
